@@ -35,11 +35,11 @@ img {
 
 }
 
-li {
+/* li {
     display: inline block;
-    margin-left: 50px;
-    padding: 8 px;
-}
+    /* margin-left: 50px;
+    padding: 8 px; 
+} */
 
 div ul {
     display: grid;
