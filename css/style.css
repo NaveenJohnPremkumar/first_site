@@ -187,7 +187,7 @@ nav ul {
 }
 
 .pic {
-    visibility: hidden;
+    display: none;
 }
 
 ol li {
@@ -229,7 +229,7 @@ ol li {
     }
 
     .gif {
-        visibility: hidden;
+        display: none;
     }
     
     .pic {
