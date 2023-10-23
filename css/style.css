@@ -43,7 +43,7 @@ img {
 
 div ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 33% 33% 33%;
     /* flex-wrap: wrap;
     align-items: center;
     justify-content: center; */
@@ -51,7 +51,7 @@ div ul {
 
 div ul li {
     border: solid 2px black;
-    width: 50%; /* Adjust the width as needed to control the number of columns */
+    /*width: 50%;  Adjust the width as needed to control the number of columns */
     box-sizing: border-box;
 }
 
