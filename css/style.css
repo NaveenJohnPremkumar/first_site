@@ -9,6 +9,8 @@ h1 {
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    text-shadow: 4px 4px 10px rgba(0,0,0,0.56);
+    animation: fadeIn 3s;
 }
 
 h2 {
@@ -216,6 +218,14 @@ ol li {
     #skip a{
         -webkit-transition: left 0s;
         transition:left  0s; 
+    }
+
+    h1 {
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        text-shadow: 4px 4px 10px rgba(0,0,0,0.56);
+        animation: fadeIn 0s;
     }
 
     nav ul li {
