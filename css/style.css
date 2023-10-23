@@ -42,16 +42,32 @@ li {
 }
 
 div ul {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 div ul li {
     border: solid 2px black;
     width: 50%; /* Adjust the width as needed to control the number of columns */
     box-sizing: border-box;
+}
+
+div ul li:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+div ul li:nth-child(2) {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+div ul li:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
 }
 
 nav {
@@ -179,6 +195,8 @@ ol li {
 }
 
 
+
+
 /* Desktop view */
 @media screen and (min-width: 800px) {
     nav ul {
@@ -195,9 +213,7 @@ ol li {
 
 @media screen and (prefers-reduced-motion: reduce)
 {
-    #skip {
-        position: absolute;
-        left: -500px;
+    #skip a{
         -webkit-transition: left 0s;
         transition:left  0s; 
     }
