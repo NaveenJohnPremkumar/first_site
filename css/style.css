@@ -1,10 +1,12 @@
+
 body {
     background-color: lightblue ;
     color: black ;
+    font-size: 150%;
 }
-/*
+
 h1 {
-    font-size: 30px;
+    font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
@@ -12,7 +14,7 @@ h1 {
 h2 {
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
-    color: chocolate;
+    color: #824112;
 }
 
 h3 {
@@ -37,44 +39,186 @@ li {
     display: inline block;
     margin-left: 50px;
     padding: 8 px;
-}*/
+}
 
-ul {
+div ul {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-li {
-    margin-left: 10px;
-    border: solid 2px black ;
+div ul li {
+    border: solid 2px black;
+    width: 50%; /* Adjust the width as needed to control the number of columns */
+    box-sizing: border-box;
 }
 
 nav {
-    border: 2px solid black ;
-    display: inline block;
+    border: 2px solid rgb(131, 93, 93);
+    display: block; /* Change this to block to push the nav bar below */
+    background-color: #b3ada8;
+}
 
+nav ul li {
+    border: solid 2px black;
+    display: block; /* Display list items vertically on mobile */
+    margin: 5px 0;  /* Add spacing between list items */
+    width: 1fr;
+    background-color: #f4f1ff; 
+    -webkit-transition: background-color 1.0s;
+    transition: background-color 1.0s;
+}
+
+nav ul li:hover {
+    border: solid 2px black;
+    display: block; /* Display list items vertically on mobile */
+    margin: 5px 0;  /* Add spacing between list items */
+    width: 1fr;
+    background-color: #d0ffd0; 
+    
 }
 
 nav a {
     text-decoration: none;
     color: black;
+    display: block; /* Display the navigation as a column on mobile */
 }
 
 #skip {
     position: absolute;
     left: -500px;
+    -webkit-transition: left 0.5s;
+    transition: left 0.5s; /* Add a smooth transition for animation */
 }
 
 #skip:focus {
+    position: relative;
+    background-color: whitesmoke;
     left: 20px;
+    border: solid 2px black;
 }
 
 .thumbnail {
-    border: solid 20px blue;
+    border: solid 10px blue;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: auto;
     display: block;
-    width: 250px
+    width: 250px;
+}
+
+.gallery img, .gallery video {
+    border: solid 10px blue;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+    width: 250px;
+}
+
+body > a {
+    position: fixed;
+    left: -400px;
+}
+
+.pets {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 95%;
+    justify-content: center;
+    gap: 15px;
+}
+
+p {
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.gallery img {
+    border: 20px solid blue;
+    padding: 20px;
+    margin: auto;
+    width: 90%;
+
+}
+
+nav ul {
+    justify-content: center;
+    display: block;
+}
+
+
+.active {
+    background-color: black;
+
+}
+
+.active a {
+    text-decoration: underline;
+    color: pink;
+}
+
+.gif {
+    visibility: visible;
+}
+
+.pic {
+    visibility: hidden;
+}
+
+ol li {
+    list-style-type: disc;
+}
+
+
+/* Desktop view */
+@media screen and (min-width: 800px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+    }
+}
+
+
+@media screen and (prefers-reduced-motion: reduce)
+{
+    #skip {
+        position: absolute;
+        left: -500px;
+        -webkit-transition: left 0s;
+        transition:left  0s; 
+    }
+
+    nav ul li {
+        border: solid 2px black;
+        display: block; /* Display list items vertically on mobile */
+        margin: 5px 0;  /* Add spacing between list items */
+        width: 20%;
+        background-color: #f4f1ff; 
+        -webkit-transition: background-color 0s;
+        transition: background-color 0s;
+    }
+
+    .gif {
+        visibility: hidden;
+    }
+    
+    .pic {
+        visibility: visible;
+    }
+
+    
 }

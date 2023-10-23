@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/reset.css"> -->
-    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>Travel</title>
 
 </head>
 
@@ -15,16 +16,17 @@
         <ul>
             <li><a href="index.html">Home/Pets</a></li>
             <li><a href="recipes.html">Recipes</a></li>
-            <li><a href="travel.html">Travel</a></li>
+            <li class = "active"><a href="travel.html">Travel</a></li>
         </ul>
     </nav>
-    <main>
+    <main id = "main">
+        <h1>Travel</h1>
         <div>
             <div>
                 <h2>Yellowstone</h2>
 
-                <img src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron.">
-                <img src="images/yellowstone_cauldron.jpg" width="400" alt="Bubbling cauldron">
+                <img class ="gif"src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron.">
+                <img class = "pic"src="images/yellowstone_cauldron.jpg" width="400" alt="Bubbling cauldron">
 
                 <h3>Geographical Location: North America</h3>
                 <p>Yellowstone is the first national park in the United States. It covers over 2.2 million acres, and
@@ -39,46 +41,41 @@
                         href="https://cowboystatedaily.com/">Cowboy State Daily</a>.</p>
 
                 <h3>Photo Gallery</h3>
-                <figure>
-                    <img src="images/yellowstone_travertine.JPG" width="200"
-                        alt="A large mound of multi-colored travertine">
-                    <figcaption>Mammoth Hot Springs has a number of actively forming Travertine terraces.</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/yellowstone_sunset.jpg" width="200"
-                        alt="Sunset over mountains with some charred trees in the foreground">
-                    <figcaption>The drive to Lamar Valley requires some dangerous roads. But the result is amazing
-                        sunset views.</figcaption>
-                </figure>
-
-
-                <figure>
-                    <video width="200" controls>
-                        <source src="images/yellowstone_prism.MOV">
-                        Your browser does not support the video tag.
-                    </video>
-                    <figcaption>The multicolored layers get their hues from different species of bacteria living in the
-                        cooler water around the spring.</figcaption>
-                </figure>
-
-
-                <figure>
-                    <video width="200" controls>
-                        <source src="images/yellowstone_buffalo.MOV">
-                        Your browser does not support the video tag.
-                    </video>
-                    <figcaption>The buffalo were so common along the roads in Yellowstone that our mantra became "If it
-                        ain't lickin the car, we aren't stopping."</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/yellowstone_sulphur_springs.JPG" width="200"
-                        alt="A large spring with clouds of sulfur smoke rising from it.">
-
-                    <figcaption>If you can handle the odor, the Yellowstone Sulphur Springs is a great place to hike.
-                    </figcaption>
-                </figure>
+                <div class="gallery">
+                    <figure>
+                        <img src="images/yellowstone_travertine.JPG" width="200"
+                            alt="A large mound of multi-colored travertine">
+                        <figcaption>Mammoth Hot Springs has a number of actively forming Travertine terraces.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/yellowstone_sunset.jpg" width="200"
+                            alt="Sunset over mountains with some charred trees in the foreground">
+                        <figcaption>The drive to Lamar Valley requires some dangerous roads. But the result is amazing
+                            sunset views.</figcaption>
+                    </figure>
+                    <figure>
+                        <video width="200" controls>
+                            <source src="images/yellowstone_prism.MOV">
+                            Your browser does not support the video tag.
+                        </video>
+                        <figcaption>The multicolored layers get their hues from different species of bacteria living in the
+                            cooler water around the spring.</figcaption>
+                    </figure>
+                    <figure>
+                        <video width="200" controls>
+                            <source src="images/yellowstone_buffalo.MOV">
+                            Your browser does not support the video tag.
+                        </video>
+                        <figcaption>The buffalo were so common along the roads in Yellowstone that our mantra became "If it
+                            ain't lickin the car, we aren't stopping."</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/yellowstone_sulphur_springs.JPG" width="200"
+                            alt="A large spring with clouds of sulfur smoke rising from it.">
+                        <figcaption>If you can handle the odor, the Yellowstone Sulphur Springs is a great place to hike.
+                        </figcaption>
+                    </figure>
+                </div>
                 <!-- Colleen van Lent -->
             </div>
 
@@ -87,8 +84,8 @@
             <div>
                 <h2>Zion National Park</h2>
 
-                <img src="images/zion_river.gif" width="400" alt="Zion river GIF">
-                <img src="images/zion_River.jpg" width="400" alt="Zion river image">
+                <img class ="gif" src="images/zion_river.gif" width="400" alt="Zion river GIF">
+                <img class ="pic"src="images/zion_River.jpg" width="400" alt="Zion river image">
 
                 <h3>Geographical Location: North America</h3>
                 <p>Found in southwestern Utah, Zion National Park spreads over 229 square miles. The park is known for
@@ -103,6 +100,7 @@
                     that come with these trails that all hikers should read and learn about before their expedition.</p>
 
                 <h3>Photo Gallery</h3>
+                <div class="gallery">
                 <figure>
                     <img src="images/Zion_Angels_Landing.jpg" width="200"
                         alt="A large mound of multi-colored travertine">
@@ -140,13 +138,14 @@
 
                     <figcaption>Zion in the winter offers different but just as amazing views</figcaption>
                 </figure>
+                </div>
                 <!-- Colleen van Lent -->
             </div>
             <div>
                 <h2>Sofia, Bulgaria</h2>
 
-                <img src="images/Sofia_Bulgaria.gif" width="400" alt="Bubbling cauldron.">
-                <img src="images/Sofia_Bulgaria.jpg" width="400" alt="Bubbling cauldron">
+                <img class ="gif"src="images/Sofia_Bulgaria.gif" width="400" alt="Bubbling cauldron.">
+                <img class ="pic"src="images/Sofia_Bulgaria.jpg" width="400" alt="Bubbling cauldron">
 
                 <h3>Geographical Location: Europe</h3>
                 <p>Sofia is the capital city of Bulgaria, a country located in Eastern Europe. It is part of the
@@ -160,6 +159,7 @@
                 </p>
 
                 <h3>Photo Gallery</h3>
+                <div class="gallery">
                 <figure>
                     <img src="images/sofia_cathedral.jpeg" width="200" alt="A large mound of multi-colored travertine">
                     <figcaption>Located in the city’s center, St. Alexander Nevsky Cathedral displays some of Sofia’s
@@ -193,6 +193,7 @@
                         cobblestones. Being one of the first streets in the entire city, it was first paved in 1907 and
                         continues to be maintained to this day. </figcaption>
                 </figure>
+                </div>
 
 
 
@@ -201,8 +202,8 @@
             <div>
                 <h2>Palo Alto</h2>
 
-                <img src="images/paloalto_oval.gif" width="400" alt="Bubbling cauldron.">
-                <img src="images/paloalto_oval.jpg" width="400" alt="Bubbling cauldron">
+                <img class ="gif"src="images/paloalto_oval.gif" width="400" alt="Bubbling cauldron.">
+                <img class ="pic"src="images/paloalto_oval.jpg" width="400" alt="Bubbling cauldron">
 
                 <h3>Geographical Location: North America</h3>
                 <p>Palo Alto is a city located in the San Francisco Bay Area in California. Palo Alto was established in
@@ -217,6 +218,7 @@
                 </p>
 
                 <h3>Photo Gallery</h3>
+                <div class="gallery">
                 <figure>
                     <img src="images/paloalto_market.jpg" width="200" alt="A large mound of multi-colored travertine">
                     <figcaption>The farmers market is the place to buy fresh fruits and vegetables and people watch
@@ -248,15 +250,15 @@
                     " width="200" alt="Sunset over mountains with some charred trees in the foreground">
                     <figcaption>The lake at Foothills is great for kayaking or canoeing </figcaption>
                 </figure>
-
+                </div>
 
 
                 <!-- Colleen van Lent -->
             </div>
             <div>
                 <h2>Giza,Egypt</h2>
-                <img src="images/Giza_sunrise.gif" width="400" alt="giza sunrise gif">
-                <img src="images/Giza_main.jpg" width="400" alt="giza sunrise jpg">
+                <img class ="gif"src="images/Giza_sunrise.gif" width="400" alt="giza sunrise gif">
+                <img class ="pic"src="images/Giza_main.jpg" width="400" alt="giza sunrise jpg">
 
                 <p>
                     Geographical Location: Africa
@@ -275,10 +277,11 @@
 
 
                 <h3> Photo Gallery</h3>
+                <div class="gallery">
                 <img class="thumbnail" src="images/Giza_sphinx.jpeg" width="200" alt="Sphinx in Egypt">
                 <p>Picture of the sphinx</p>
 
-
+                
                 <img src="images/Giza_nileriver.webp" width="200" alt="Nile River in Giza">
                 <p>Picture of the “Nile River along side the sand dunes</p>
 
@@ -294,6 +297,7 @@
 
                 <p> Ashwanth Vijayan, Derek Yang </p>
                 </p>
+                </div>
             </div>
 
 
