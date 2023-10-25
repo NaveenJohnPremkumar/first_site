@@ -10,7 +10,7 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     text-shadow: 4px 4px 10px rgba(0,0,0,0.56);
-    opacity: 0;
+    opacity: 1;
     animation: fade-in 3s;
 }
 
@@ -26,12 +26,17 @@ h2 {
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
     color: #824112;
+    text-decoration: underline;
+    text-align: center;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 25px;
     font-family: sans-serif;
     color: purple;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
 }
 
 p {
@@ -150,8 +155,8 @@ body > a {
 }
 
 .pets {
-    width: 90%;
-    margin: auto;
+    padding: 5px;
+    margin: 10px;
     display: grid;
     grid-template-columns: 95%;
     justify-content: center;
@@ -202,7 +207,13 @@ nav ul {
 }
 
 ol li {
-    list-style-type: disc;
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+ol {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 
@@ -257,4 +268,8 @@ ol li {
     }
 
     
+}
+
+main {
+    border: dashed 2px gray;
 }
